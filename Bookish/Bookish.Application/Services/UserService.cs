@@ -3,7 +3,7 @@ using Bookish.DataAccess;
 using Bookish.DataAccess.Entities;
 using Bookish.DataAccess.Interfaces;
 
-namespace Bookish.Application
+namespace Bookish.Application.Services
 {
     public class UserService : IUserService
     {

@@ -1,5 +1,5 @@
-using Bookish.Application;
 using Bookish.Application.Interfaces;
+using Bookish.Application.Services;
 using Bookish.DataAccess;
 using Bookish.DataAccess.Interfaces;
 
