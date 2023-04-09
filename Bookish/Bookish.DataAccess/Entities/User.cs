@@ -16,5 +16,7 @@ namespace Bookish.DataAccess.Entities
         public string Password { get; set; }
         public Guid AddressId { get; set; }
         public List<Address> Addresses { get; set; }
+        public Guid OrderId { get; set; }
+        public List<Order> Orders { get; set; }
     }
 }

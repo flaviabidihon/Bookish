@@ -1,11 +1,18 @@
-﻿using Bookish.DataAccess.Entities;
+﻿//using Bookish.Application.Models.Users;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace Bookish.Application.Interfaces
-{
-    public interface IUserService
-    {
-        List<User> GetAll();
+//namespace Bookish.Application.Interfaces
+//{
+//    public interface IUserService
+//    {
+//        UserResponseModel CreateUser(CreateUserRequestModel model);
 
-        User GetById(string id);
-    }
-}
+//        UserResponseModel UpdateUser(Guid id, UpdateUserRequestModel model);
+
+//        void DeleteUser(Guid id);
+//    }
+//}

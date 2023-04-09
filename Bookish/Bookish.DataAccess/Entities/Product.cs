@@ -11,6 +11,7 @@ namespace Bookish.DataAccess.Entities
         public Guid Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+
         public List<OrderProduct> Orders { get; set; }
     }
 }

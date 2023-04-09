@@ -1,7 +1,7 @@
 using Bookish.Application.Interfaces;
 using Bookish.Application.Services;
 using Bookish.DataAccess;
-using Bookish.DataAccess.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +12,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+
+builder.Services.AddDbContext<DatabaseContext>(options =>
+{
+    options.UseSqlServer("Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=Bookish;Integrated Security=True");
+});
 
 var app = builder.Build();
 

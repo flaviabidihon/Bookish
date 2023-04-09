@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Bookish.DataAccess\Bookish.DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
-  </ItemGroup>
-
 </Project>
